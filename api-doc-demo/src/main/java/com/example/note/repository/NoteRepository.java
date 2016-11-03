@@ -2,12 +2,14 @@ package com.example.note.repository;
 
 import java.util.List;
 
-import com.example.note.resources.Note;
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
 
-public interface NoteRepository {
+import com.example.note.domain.Note;
+
+@Repository
+public interface NoteRepository extends CrudRepository<Note, Long> {
 
 	List<Note> findAll();
-
-	Note find(Long id);
 
 }

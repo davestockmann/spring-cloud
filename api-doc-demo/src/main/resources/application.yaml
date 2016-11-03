@@ -1,0 +1,12 @@
+logging:
+  level:
+    ROOT: ERROR
+
+spring:
+  jpa:
+    database: HSQL
+    hibernate:
+      ddl-auto: create-drop
+  jackson:
+    serialization:
+      indent_output: true
