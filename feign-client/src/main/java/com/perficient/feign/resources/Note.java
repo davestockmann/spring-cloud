@@ -1,5 +1,7 @@
 package com.perficient.feign.resources;
 
+import java.util.List;
+
 public class Note {
 
 	private long id;
@@ -7,6 +9,8 @@ public class Note {
 	private String title;
 
 	private String body;
+
+	private List<Tag> tags;
 
 	public Note() {
 	}
@@ -34,6 +38,22 @@ public class Note {
 
 	public String getTitle() {
 		return title;
+	}
+
+	public List<Tag> getTags() {
+		return tags;
+	}
+
+	public void setTags(List<Tag> tags) {
+		this.tags = tags;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
+
+	public void setTitle(String title) {
+		this.title = title;
 	}
 
 }
